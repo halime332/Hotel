@@ -6,6 +6,7 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+  import { ToastContainer } from 'react-toastify';
 
 //query client  kurulum
 const queryClient = new QueryClient();
@@ -15,7 +16,8 @@ createRoot(document.getElementById('root')!).render(
   //query cliient sağlayıcısı
   <QueryClientProvider client={queryClient}>
     <App />
-    <ReactQueryDevtools initialIsOpen={false} />
+    <ReactQueryDevtools  />
+    <ToastContainer/>
   </QueryClientProvider>
 
 );

@@ -10,7 +10,7 @@ const Home:FC = () => {
       <Hero/>
 
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 max-lg:mt-10 gap-5 lg:mt-20">
+      <div className="grid grid-cols-1 lg:grid-cols-4 max-lg:mt-10 gap-5 ">
          <Filter/>
 
          

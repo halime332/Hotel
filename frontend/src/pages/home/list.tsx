@@ -16,7 +16,7 @@ const List:FC = () => {
    const [params]=useSearchParams();
    const paramsObj =Object.fromEntries(params.entries());
 
-   console.log(paramsObj);
+   
 
   //api isteği 
   const {isLoading,error,data,refetch} = useQuery<Place[]>({

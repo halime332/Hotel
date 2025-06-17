@@ -8,7 +8,7 @@ const Images:FC<Props> = ({image}) => {
   return (
     <div className="grid lg:grid-cols-2 mt-4 gap-4 w-full">
       <div className="w-full">
-        <img src={image} className="rounded-lg object-cover size-full"/>
+        <img src={image} className="rounded-lg object-cover size-full max-h-[500px]"/>
       </div>
 
       <div className="grid grid-cols-2 gap-4">

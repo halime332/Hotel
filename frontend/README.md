@@ -5,3 +5,5 @@
 -react-icons
 -tailwindcss
 -axios
+
+<img src="/screen.gif"/>

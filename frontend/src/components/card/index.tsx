@@ -52,7 +52,7 @@ const Card: FC<Props> = ({ place }) => {
         </div>
 
         <div className="flex flex-col items-end">
-          <span className="text-2xl font-bold">{place.price_per_night}</span>
+          <span className="text-2xl font-bold">{place.price_per_night}$</span>
           <span className="text-xs text-gray-400">
             vergiler ve ücretler dahildir
           </span>

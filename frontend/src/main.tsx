@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')!).render(
   //query cliient sağlayıcısı
   <QueryClientProvider client={queryClient}>
     <App />
-    <ReactQueryDevtools  />
+   {/* < ReactQueryDevtools  /> */}
     <ToastContainer/>
   </QueryClientProvider>
 

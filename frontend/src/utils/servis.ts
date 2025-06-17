@@ -41,3 +41,7 @@ export const getPlace =async(id:string):Promise<Place>=>{
 
   return res.data.place;
 };
+
+export const deletePlace =async (id:string):Promise<void> =>{
+ await axios.delete(`http://localhost:4001/api/place/${id}`)
+}

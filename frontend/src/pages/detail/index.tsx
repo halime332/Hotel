@@ -4,7 +4,13 @@ import { useParams } from "react-router-dom";
 import { getPlace } from "../../utils/servis";
 import Loader from "../../components/loader";
 import Error from "../../components/error";
-import Return from "./return";
+import Container from "./container";
+import Images from "./images";
+import Info from "./info";
+import Overview from "./overview";
+import Button from "./button";
+
+
 
 
 const Detail:FC = () => {
@@ -18,33 +24,35 @@ const Detail:FC = () => {
    
   if(isLoading)
     return(
-    <Children>
+    <Container>
       <Loader/>
-    </Children>
+    </Container>
       
   
   );
 
   if(error)
-    return(<div>
-      <Return/>
-      <Error  info={error} refetch={refetch}/>
-    </div>
+    return(<Container>
+    <Error  info={error} refetch={refetch}/>
+    </Container>
   );
 
 
   if(!data)  return;
+
+ 
+
   
   return (
   
-    <div className="container">
-        <Return/>
+    <Container>
      
-     <div>
-      <h1>{data.name}</h1>
-    </div>
+      <Images image={data.image_url}/>
+      <Info place={data}/>
+      <Overview place={data}/>
 
-    </div>
+      <Button id={id as string}/>
+    </Container>
   )
 };
 

@@ -49,7 +49,7 @@ const Filter:FC= () => {
 
       <div className="field">
         <label>Konaklama yeri adına göre ara</label>
-        <input type="text" placeholder="örn:Seaside Villa" className="input" onChange={(e)=>handleChange("location",e.target.value)} 
+        <input type="text" placeholder="örn:Seaside Villa" className="input" onChange={(e)=>handleChange("title",e.target.value)} 
         value={params.get("title")|| "" }/>
       </div>
 

@@ -6,4 +6,4 @@
 -tailwindcss
 -axios
 
-<img src="/screen.gif"/>
+<img src="screen.gif"/>
